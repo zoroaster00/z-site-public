@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "z-app": "apps/z-app",
+    "z-app-e2e": "apps/z-app-e2e"
+  }
+}
