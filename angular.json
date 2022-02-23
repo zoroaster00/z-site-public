@@ -1,6 +1,8 @@
 {
   "version": 2,
   "projects": {
+    "ang-mfe": "apps/ang-mfe",
+    "ang-mfe-e2e": "apps/ang-mfe-e2e",
     "z-app": "apps/z-app",
     "z-app-e2e": "apps/z-app-e2e"
   }

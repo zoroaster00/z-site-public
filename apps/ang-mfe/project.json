@@ -1,24 +1,24 @@
 {
   "projectType": "application",
-  "root": "apps/z-app",
-  "sourceRoot": "apps/z-app/src",
+  "root": "apps/ang-mfe",
+  "sourceRoot": "apps/ang-mfe/src",
   "prefix": "z-site",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:webpack-browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/z-app",
-        "index": "apps/z-app/src/index.html",
-        "main": "apps/z-app/src/main.ts",
-        "polyfills": "apps/z-app/src/polyfills.ts",
-        "tsConfig": "apps/z-app/tsconfig.app.json",
+        "outputPath": "dist/apps/ang-mfe",
+        "index": "apps/ang-mfe/src/index.html",
+        "main": "apps/ang-mfe/src/main.ts",
+        "polyfills": "apps/ang-mfe/src/polyfills.ts",
+        "tsConfig": "apps/ang-mfe/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/z-app/src/favicon.ico", "apps/z-app/src/assets"],
-        "styles": ["apps/z-app/src/styles.scss"],
+        "assets": ["apps/ang-mfe/src/favicon.ico", "apps/ang-mfe/src/assets"],
+        "styles": ["apps/ang-mfe/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
-          "path": "apps/z-app/webpack.config.js"
+          "path": "apps/ang-mfe/webpack.config.js"
         }
       },
       "configurations": {
@@ -37,13 +37,13 @@
           ],
           "fileReplacements": [
             {
-              "replace": "apps/z-app/src/environments/environment.ts",
-              "with": "apps/z-app/src/environments/environment.prod.ts"
+              "replace": "apps/ang-mfe/src/environments/environment.ts",
+              "with": "apps/ang-mfe/src/environments/environment.prod.ts"
             }
           ],
           "outputHashing": "all",
           "customWebpackConfig": {
-            "path": "apps/z-app/webpack.prod.config.js"
+            "path": "apps/ang-mfe/webpack.prod.config.js"
           }
         },
         "development": {
@@ -61,44 +61,39 @@
       "executor": "@nrwl/angular:webpack-server",
       "configurations": {
         "production": {
-          "browserTarget": "z-app:build:production"
+          "browserTarget": "ang-mfe:build:production"
         },
         "development": {
-          "browserTarget": "z-app:build:development"
+          "browserTarget": "ang-mfe:build:development"
         }
       },
       "defaultConfiguration": "development",
       "options": {
-        "publicHost": "http://localhost:4200"
+        "port": 4201,
+        "publicHost": "http://localhost:4201"
       }
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "z-app:build"
+        "browserTarget": "ang-mfe:build"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "apps/z-app/src/**/*.ts",
-          "apps/z-app/src/**/*.html"
+          "apps/ang-mfe/src/**/*.ts",
+          "apps/ang-mfe/src/**/*.html"
         ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/z-app"],
+      "outputs": ["coverage/apps/ang-mfe"],
       "options": {
-        "jestConfig": "apps/z-app/jest.config.js",
+        "jestConfig": "apps/ang-mfe/jest.config.js",
         "passWithNoTests": true
-      }
-    },
-    "serve-mfe": {
-      "executor": "@nrwl/workspace:run-commands",
-      "options": {
-        "commands": ["nx serve ang-mfe", "nx serve z-app"]
       }
     }
   },
