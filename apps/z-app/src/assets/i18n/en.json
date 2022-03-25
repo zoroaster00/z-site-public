@@ -1,0 +1,13 @@
+{
+  "title": {
+    "home": "Home",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "about": {
+    "name": "Min-Chieh (MinJ) Hsiao",
+    "description": "A front end developer."
+  }
+}

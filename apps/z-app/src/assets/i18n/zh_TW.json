@@ -1,0 +1,13 @@
+{
+  "title": {
+    "home": "首頁",
+    "experience": "經歷",
+    "skills": "技能",
+    "projects": "專案",
+    "contact": "聯絡方式"
+  },
+  "about": {
+    "name": "蕭名傑",
+    "description": "網頁前端開發"
+  }
+}
