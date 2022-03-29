@@ -28,4 +28,21 @@
       </svg>
     </button>
   </div>
+  <ng-container *transloco="let t">
+    <div class="mx-auto p-8 flex justify-end max-w-4xl">
+      <p class="flex flex-row text-gray-400">
+        {{ t('common.builtWith') }}
+        <a href="https://angular.io" target="__blank"
+          ><img src="/assets/img/angular.svg" class="h-6 w-6 mx-1"
+        /></a>
+        <a href="https://tailwindcss.com" target="__blank"
+          ><img src="/assets/img/tailwind.svg" class="h-6 w-6 mx-1"
+        /></a>
+        {{ t('common.and') }}
+        <a href="https://nx.dev/" target="__blank" class="ml-1 text-blue-600"
+          >Nx</a
+        >
+      </p>
+    </div>
+  </ng-container>
 </div>

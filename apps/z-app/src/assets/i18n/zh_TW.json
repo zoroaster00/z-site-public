@@ -9,5 +9,12 @@
   "about": {
     "name": "蕭名傑",
     "description": "網頁前端開發"
+  },
+  "exp": {
+    "current": "現任"
+  },
+  "common": {
+    "and": "和",
+    "builtWith": "技術使用"
   }
 }

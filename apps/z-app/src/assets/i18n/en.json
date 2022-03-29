@@ -9,5 +9,12 @@
   "about": {
     "name": "Min-Chieh (MinJ) Hsiao",
     "description": "A front end developer."
+  },
+  "exp": {
+    "current": "current"
+  },
+  "common": {
+    "and": "and",
+    "builtWith": "Built with"
   }
 }

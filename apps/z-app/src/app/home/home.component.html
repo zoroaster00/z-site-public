@@ -23,64 +23,50 @@
       contributor of Custom Form and Tango UI SDK.
     </p>
     <h3
-      class="font-bold text-2xl md:text-4xl tracking-wide mb-4 text-black dark:text-white text-center uppercase"
+      class="font-bold text-2xl md:text-4xl tracking-wide mt-8 mb-4 text-black dark:text-white text-center uppercase"
       id="experience"
     >
       {{ t('title.experience') }}
     </h3>
-    <p>
-      Min-Chieh worked as a full-stack developer in Application Director when
-      joining VMware in 2013. Later he focused on UI development and was lead of
-      some key features in vRealize Automation from early design phase. He was
-      part of core development of Tekton in constructing a plugin system where
-      users can design views with API support. He implemented the initial
-      version of several core features in Tango Blueprint UI, and he was also a
-      contributor of Custom Form and Tango UI SDK.
-    </p>
+    <z-site-timeline></z-site-timeline>
     <h3
-      class="font-bold text-2xl md:text-4xl tracking-wide mb-4 text-black dark:text-white text-center uppercase"
+      class="font-bold text-2xl md:text-4xl tracking-wide mt-8 mb-4 text-black dark:text-white text-center uppercase"
       id="projects"
     >
       {{ t('title.projects') }}
     </h3>
-    <p>
-      Min-Chieh worked as a full-stack developer in Application Director when
-      joining VMware in 2013. Later he focused on UI development and was lead of
-      some key features in vRealize Automation from early design phase. He was
-      part of core development of Tekton in constructing a plugin system where
-      users can design views with API support. He implemented the initial
-      version of several core features in Tango Blueprint UI, and he was also a
-      contributor of Custom Form and Tango UI SDK.
-    </p>
+    <z-site-project-card></z-site-project-card>
     <h3
-      class="font-bold text-2xl md:text-4xl tracking-wide mb-4 text-black dark:text-white text-center uppercase"
+      class="font-bold text-2xl md:text-4xl tracking-wide mt-8 mb-4 text-black dark:text-white text-center uppercase"
       id="skills"
     >
       {{ t('title.skills') }}
     </h3>
-    <p>
-      Min-Chieh worked as a full-stack developer in Application Director when
-      joining VMware in 2013. Later he focused on UI development and was lead of
-      some key features in vRealize Automation from early design phase. He was
-      part of core development of Tekton in constructing a plugin system where
-      users can design views with API support. He implemented the initial
-      version of several core features in Tango Blueprint UI, and he was also a
-      contributor of Custom Form and Tango UI SDK.
-    </p>
+    <div class="flex flex-wrap">
+      <span
+        *ngFor="let skill of skills"
+        class="bg-blue-100 text-blue-800 text-base font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800"
+        >{{ skill }}</span
+      >
+    </div>
+
     <h3
-      class="font-bold text-2xl md:text-4xl tracking-wide mb-4 text-black dark:text-white text-center uppercase"
+      class="font-bold text-2xl md:text-4xl tracking-wide mt-8 mb-4 text-black dark:text-white text-center uppercase"
       id="contact"
     >
       {{ t('title.contact') }}
     </h3>
-    <p>
-      Min-Chieh worked as a full-stack developer in Application Director when
-      joining VMware in 2013. Later he focused on UI development and was lead of
-      some key features in vRealize Automation from early design phase. He was
-      part of core development of Tekton in constructing a plugin system where
-      users can design views with API support. He implemented the initial
-      version of several core features in Tango Blueprint UI, and he was also a
-      contributor of Custom Form and Tango UI SDK.
-    </p>
+    <div class="flex flex-row justify-center">
+      <a href="https://angular.io" target="__blank"
+        ><img
+          src="/assets/img/github.svg"
+          class="h-12 w-12 mx-1 dark:icon-filter"
+      /></a>
+      <a href="https://angular.io" target="__blank"
+        ><img
+          src="/assets/img/linkedin.svg"
+          class="h-12 w-12 mx-1 dark:icon-filter"
+      /></a>
+    </div>
   </div>
 </ng-container>

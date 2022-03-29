@@ -32,6 +32,23 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
 
   @Output('scrollToTop') scrollToTop = new EventEmitter<boolean>();
 
+  skills: string[] = [
+    'Javascript',
+    'Typescript',
+    'HTML',
+    'CSS',
+    'Angular',
+    'Nx',
+    'Ngxs',
+    'Git',
+    'CI/CD',
+    'Jest',
+    'Cypress',
+    'Java',
+    'Python',
+    'C#',
+  ];
+
   constructor(router: Router, private scroller: ViewportScroller) {
     router.events
       .pipe(

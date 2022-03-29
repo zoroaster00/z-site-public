@@ -6,3 +6,46 @@
 html {
   scroll-behavior: smooth;
 }
+
+.dark {
+  .dark\:icon-filter {
+    filter: invert(98%) sepia(0%) saturate(164%) hue-rotate(48deg)
+      brightness(118%) contrast(100%);
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-bottom: 100%;
+    opacity: 0;
+  }
+
+  to {
+    margin-bottom: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes slidein-r {
+  from {
+    margin-right: 100%;
+    opacity: 0;
+  }
+
+  to {
+    margin-right: 0%;
+    opacity: 1;
+  }
+}
+
+.slidein {
+  visibility: visible !important;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.slidein-r {
+  visibility: visible !important;
+  animation-duration: 3s;
+  animation-name: slidein-r;
+}
