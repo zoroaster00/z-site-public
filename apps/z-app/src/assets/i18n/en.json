@@ -6,55 +6,6 @@
     "projects": "Projects",
     "contact": "Contact"
   },
-  "about": {
-    "name": "Min-Chieh (MinJ) Hsiao",
-    "description": "Software Engineer with a demonstrated history of working in the software industry. Skilled in Web development, JavaScript, Typescript, and Angular.",
-    "summary": "A front end developer."
-  },
-  "exp": {
-    "current": "current",
-    "e0": {
-      "title": "Staff Member Of Technical Staff at VMware",
-      "atTime": "06/2013 - ",
-      "description": "Joined as a full-stack developer in 2013. Later focused on UI development and was lead of some key features in vRealize Automation from early design phase."
-    },
-    "e1": {
-      "title": "Software Engineer at Adconion",
-      "atTime": "08/2009 - 06/2013",
-      "description": "Worked on several tech stacks to create business applications for data management."
-    },
-    "e2": {
-      "title": "University of California, Los Angeles",
-      "atTime": "2007 - 2009",
-      "description": "Master of Science, Electrical Engineering"
-    },
-    "e3": {
-      "title": "National Taiwan University",
-      "atTime": "2003 - 2007",
-      "description": "Bachelor's Degree, Electrical Engineering"
-    }
-  },
-  "project": {
-    "langExt": {
-      "title": "Search with Language Range",
-      "description": "A Chrome extension to search in Google with the lanaguage you choose."
-    },
-    "lineBot": {
-      "title": "Line Bot Notification",
-      "description": "The chat bot is developed in <a class='underline text-blue-600 hover:text-blue-800 visited:text-purple-600' href='https://developers.line.biz/en/reference/messaging-api' target='__blank'>Line Messenger</a>, and it will be triggered by a Chrome extension, which is checking if a target element in the current page reaches the expected state.",
-      "summary": "A chat bot in Line Messenger to notify if a target element is triggered on a website."
-    },
-    "gameDemo": {
-      "title": "A Turn-based Battle Game",
-      "description": "This demo shows a turn-based battle game using game engine OGRE.",
-      "summary": "A turn-based battle game by using C++ and OGRE."
-    },
-    "antDemo": {
-      "title": "Simulation of Ant's Behavior",
-      "description": "One interesting animal behavior is ant's use of pheromones as a joint communication mechanism. In this project, a simulation of how ants interact with each other is implemented.",
-      "summary": "Implement ant's use of pheromones to simulate animal behavior, using C++ and OGRE"
-    }
-  },
   "common": {
     "and": "and",
     "builtWith": "Built with",

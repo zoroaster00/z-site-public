@@ -1,17 +1,13 @@
 import {
-  AfterViewChecked,
   AfterViewInit,
   Component,
   ElementRef,
   OnDestroy,
   OnInit,
-  QueryList,
   ViewChild,
-  ViewChildren,
 } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { TranslocoService } from '@ngneat/transloco';
-import { Subject, takeUntil } from 'rxjs';
 
 interface Project {
   title: string;
@@ -43,8 +39,6 @@ export class ProjectCardComponent implements OnInit, OnDestroy, AfterViewInit {
     });
   });
 
-  private destroy$ = new Subject();
-
   constructor(
     private translate: TranslocoService,
     private sanitizer: DomSanitizer
@@ -60,35 +54,19 @@ export class ProjectCardComponent implements OnInit, OnDestroy, AfterViewInit {
   ngOnInit(): void {
     this.projects = [
       {
-        title: this.translate.translate('project.langExt.title'),
-        summary: this.translate.translate('project.langExt.description'),
-        description: this.translate.translate('project.langExt.description'),
-        img: '/assets/img/search-ext.jpg',
-        link: 'https://chrome.google.com/webstore/detail/google-search-with-langua/fgmckmbejhgjokoceblcilmhpgehfgkf',
+        title: this.translate.translate('project.p1.title'),
+        summary: this.translate.translate('project.p1.description'),
+        description: this.translate.translate('project.p1.description'),
+        img: '',
+        link: '',
       },
       {
-        title: this.translate.translate('project.lineBot.title'),
-        summary: this.translate.translate('project.lineBot.summary'),
-        description: this.translate.translate('project.lineBot.description'),
-        img: '/assets/img/line-bot.png',
-        link: 'https://github.com/zoroaster00/page-wait-helper',
-      },
-      {
-        title: this.translate.translate('project.gameDemo.title'),
-        summary: this.translate.translate('project.gameDemo.summary'),
-        description: this.translate.translate('project.gameDemo.description'),
-        img: '/assets/img/game-demo.png',
+        title: this.translate.translate('project.p2.title'),
+        summary: this.translate.translate('project.p2.summary'),
+        description: this.translate.translate('project.p2.description'),
+        img: '',
         ytLink: this.sanitizer.bypassSecurityTrustResourceUrl(
-          'https://www.youtube.com/embed/omNXpG4fo1g'
-        ),
-      },
-      {
-        title: this.translate.translate('project.antDemo.title'),
-        summary: this.translate.translate('project.antDemo.summary'),
-        description: this.translate.translate('project.antDemo.description'),
-        img: '/assets/img/ant-demo.png',
-        ytLink: this.sanitizer.bypassSecurityTrustResourceUrl(
-          'https://www.youtube.com/embed/yEAKAAIBzFk'
+          'https://www.youtube.com/embed/TODO'
         ),
       },
     ];
@@ -96,8 +74,6 @@ export class ProjectCardComponent implements OnInit, OnDestroy, AfterViewInit {
 
   ngOnDestroy(): void {
     this.observer.disconnect();
-    this.destroy$.next({});
-    this.destroy$.complete();
   }
 
   goToLink(link: string | undefined) {

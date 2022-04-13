@@ -6,11 +6,6 @@
     "projects": "專案",
     "contact": "聯絡方式"
   },
-  "about": {
-    "name": "蕭名傑",
-    "description": "Software Engineer with a demonstrated history of working in the software industry. Skilled in Web development, JavaScript, Typescript, and Angular.",
-    "summary": "網頁前端開發"
-  },
   "exp": {
     "current": "現任"
   },
