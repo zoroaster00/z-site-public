@@ -9,40 +9,52 @@
       <z-site-home (scrollToTop)="shouldShowScrollBtn = $event"></z-site-home>
     </div>
   </main>
-  <div class="sticky bottom-8 mx-auto p-8 flex justify-end max-w-4xl">
-    <button
-      [hidden]="!shouldShowScrollBtn"
-      class="hover:animate-bounce"
-      (click)="scrollToTop()"
+  <button
+    [hidden]="!shouldShowScrollBtn"
+    class="sticky bottom-8 right-8 float-right hover:animate-bounce"
+    (click)="scrollToTop()"
+  >
+    <svg
+      class="w-6 h-6 text-slate-700 dark:text-slate-200 hover:text-sky-500 dark:hover:text-sky-400 rotate-180"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
     >
-      <svg
-        class="w-6 h-6 text-slate-700 dark:text-slate-200 hover:text-sky-500 dark:hover:text-sky-400 rotate-180"
-        fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-      </svg>
-    </button>
-  </div>
+      <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </button>
+  <!-- </div> -->
   <ng-container *transloco="let t">
     <div class="mx-auto p-8 flex justify-end max-w-4xl">
-      <p class="flex flex-row text-gray-400">
-        {{ t('common.builtWith') }}
-        <a href="https://angular.io" target="__blank"
-          ><img src="/assets/img/angular.svg" class="h-6 w-6 mx-1"
-        /></a>
-        <a href="https://tailwindcss.com" target="__blank"
-          ><img src="/assets/img/tailwind.svg" class="h-6 w-6 mx-1"
-        /></a>
-        {{ t('common.and') }}
-        <a href="https://nx.dev/" target="__blank" class="ml-1 text-blue-600"
-          >Nx</a
-        >
-      </p>
+      <div>
+        <p class="flex flex-row text-gray-700 dark:text-gray-400">
+          {{ t('common.builtWith') }}
+          <a href="https://angular.io" target="__blank"
+            ><img src="/assets/img/angular.svg" class="h-6 w-6 mx-1"
+          /></a>
+          <a href="https://tailwindcss.com" target="__blank"
+            ><img src="/assets/img/tailwind.svg" class="h-6 w-6 mx-1"
+          /></a>
+          {{ t('common.and') }}
+          <a href="https://nx.dev/" target="__blank" class="ml-1 text-blue-600"
+            >Nx</a
+          >
+        </p>
+        <p class="flex flex-row text-gray-700 dark:text-gray-400">
+          {{ t('common.srcCode') }}
+          <a
+            href="https://github.com/zoroaster00?tab=repositories"
+            target="__blank"
+            ><img
+              src="/assets/img/github.svg"
+              class="h-6 w-6 mx-1 dark:icon-filter"
+          /></a>
+          <!-- TODO change link -->
+        </p>
+      </div>
     </div>
   </ng-container>
 </div>

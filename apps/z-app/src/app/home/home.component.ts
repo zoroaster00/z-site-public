@@ -64,7 +64,6 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
     fromEvent(window, 'scroll')
       .pipe(takeUntil(this.destroy$), debounceTime(100))
       .subscribe((e) => {
-        // console.log(e);
         const containerDiv: HTMLElement = this.container?.first?.nativeElement;
         if (!containerDiv) {
           return;
@@ -99,5 +98,11 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
       .subscribe((anchor) => {
         this.scroller.scrollToAnchor(anchor);
       });
+  }
+
+  goToLink(link: string | undefined) {
+    if (link) {
+      window.open(link, '__blank');
+    }
   }
 }

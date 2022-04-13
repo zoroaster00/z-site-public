@@ -9,13 +9,8 @@ const DARK_CLASS = 'dark';
 })
 export class ThemeService {
   constructor(@Inject(DOCUMENT) private doc: Document) {
-    console.log(doc);
-    if (
-      this.isDarkSaved() ||
-      (!(THEME_INDEX in localStorage) &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches)
-    ) {
-      // is dark saved in local or theme not set but preference is set
+    if (this.isDarkSaved() || !(THEME_INDEX in localStorage)) {
+      // is dark saved in local or theme not set
       this.displayTheme(true);
     } else {
       this.displayTheme(false);

@@ -8,13 +8,18 @@
   },
   "about": {
     "name": "蕭名傑",
-    "description": "網頁前端開發"
+    "description": "Software Engineer with a demonstrated history of working in the software industry. Skilled in Web development, JavaScript, Typescript, and Angular.",
+    "summary": "網頁前端開發"
   },
   "exp": {
     "current": "現任"
   },
   "common": {
     "and": "和",
-    "builtWith": "技術使用"
+    "builtWith": "技術使用",
+    "goToLink": "相關連結",
+    "srcCode": "原始碼",
+    "email": "電子信箱",
+    "resume": "履歷"
   }
 }

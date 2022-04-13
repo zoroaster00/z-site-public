@@ -11,33 +11,27 @@
     <h3
       class="font-bold text-xl md:text-2xl tracking-wide mb-4 text-green-800 dark:text-green-600 text-center capitalize"
     >
-      {{ t('about.description') }}
+      {{ t('about.summary') }}
     </h3>
     <p>
-      Min-Chieh worked as a full-stack developer in Application Director when
-      joining VMware in 2013. Later he focused on UI development and was lead of
-      some key features in vRealize Automation from early design phase. He was
-      part of core development of Tekton in constructing a plugin system where
-      users can design views with API support. He implemented the initial
-      version of several core features in Tango Blueprint UI, and he was also a
-      contributor of Custom Form and Tango UI SDK.
+      {{ t('about.description') }}
     </p>
     <h3
-      class="font-bold text-2xl md:text-4xl tracking-wide mt-8 mb-4 text-black dark:text-white text-center uppercase"
+      class="font-bold text-2xl md:text-4xl tracking-wide mt-16 mb-8 text-black dark:text-white text-center uppercase"
       id="experience"
     >
       {{ t('title.experience') }}
     </h3>
     <z-site-timeline></z-site-timeline>
     <h3
-      class="font-bold text-2xl md:text-4xl tracking-wide mt-8 mb-4 text-black dark:text-white text-center uppercase"
+      class="font-bold text-2xl md:text-4xl tracking-wide mt-16 mb-8 text-black dark:text-white text-center uppercase"
       id="projects"
     >
       {{ t('title.projects') }}
     </h3>
     <z-site-project-card></z-site-project-card>
     <h3
-      class="font-bold text-2xl md:text-4xl tracking-wide mt-8 mb-4 text-black dark:text-white text-center uppercase"
+      class="font-bold text-2xl md:text-4xl tracking-wide mt-16 mb-8 text-black dark:text-white text-center uppercase"
       id="skills"
     >
       {{ t('title.skills') }}
@@ -51,22 +45,42 @@
     </div>
 
     <h3
-      class="font-bold text-2xl md:text-4xl tracking-wide mt-8 mb-4 text-black dark:text-white text-center uppercase"
+      class="font-bold text-2xl md:text-4xl tracking-wide mt-16 mb-8 text-black dark:text-white text-center uppercase"
       id="contact"
     >
       {{ t('title.contact') }}
     </h3>
     <div class="flex flex-row justify-center">
-      <a href="https://angular.io" target="__blank"
+      <a href="https://github.com/zoroaster00?tab=repositories" target="__blank"
         ><img
           src="/assets/img/github.svg"
           class="h-12 w-12 mx-1 dark:icon-filter"
       /></a>
-      <a href="https://angular.io" target="__blank"
+      <a
+        href="https://www.linkedin.com/in/min-chieh-hsiao-85bb162b/"
+        target="__blank"
         ><img
           src="/assets/img/linkedin.svg"
           class="h-12 w-12 mx-1 dark:icon-filter"
       /></a>
+      <button
+        (click)="goToLink('mailto:zoroaster00@gmail.com')"
+        type="button"
+        class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out ml-1"
+      >
+        {{ t('common.email') }}
+      </button>
+      <button
+        (click)="
+          goToLink(
+            'https://docs.google.com/document/d/1YdOI667xyN_p_tKCBgvgFdryFKw33R8SPnd7udSdGY8/edit?usp=sharing'
+          )
+        "
+        type="button"
+        class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out ml-1"
+      >
+        {{ t('common.resume') }}
+      </button>
     </div>
   </div>
 </ng-container>

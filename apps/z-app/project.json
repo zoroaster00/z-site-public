@@ -16,7 +16,7 @@
         "inlineStyleLanguage": "scss",
         "assets": ["apps/z-app/src/favicon.ico", "apps/z-app/src/assets"],
         "styles": ["apps/z-app/src/styles.scss"],
-        "scripts": [],
+        "scripts": ["node_modules/tw-elements/dist/js/index.min.js"],
         "customWebpackConfig": {
           "path": "apps/z-app/webpack.config.js"
         }

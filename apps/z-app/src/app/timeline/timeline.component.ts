@@ -12,11 +12,25 @@ export class TimelineComponent implements OnInit {
   ngOnInit(): void {
     this.timelineNodes = [
       {
-        title: this.translate.translate('title.experience'),
-        atTime: 'sdasd',
-        description: 'des',
+        title: this.translate.translate('exp.e0.title'),
+        atTime: this.translate.translate('exp.e0.atTime'),
+        description: this.translate.translate('exp.e0.description'),
       },
-      { title: 't1', atTime: 'sdasd', description: 'des' },
+      {
+        title: this.translate.translate('exp.e1.title'),
+        atTime: this.translate.translate('exp.e1.atTime'),
+        description: this.translate.translate('exp.e1.description'),
+      },
+      {
+        title: this.translate.translate('exp.e2.title'),
+        atTime: this.translate.translate('exp.e2.atTime'),
+        description: this.translate.translate('exp.e2.description'),
+      },
+      {
+        title: this.translate.translate('exp.e3.title'),
+        atTime: this.translate.translate('exp.e3.atTime'),
+        description: this.translate.translate('exp.e3.description'),
+      },
     ];
   }
 }
